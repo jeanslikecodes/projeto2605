@@ -1,0 +1,81 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="jeancarlos.projetofinal.NewAnuncioFragment"
+    android:id="@+id/newAnuncioFragment">
+
+    <LinearLayout
+
+        android:id="@+id/ll_form"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:padding="6dp"
+        android:weightSum="1"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Descrição do anúncio: "
+            android:paddingLeft="6dp"
+            android:layout_margin="3dp"
+            android:background="@color/colorBlueAGA"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/editDescricao"
+            android:textSize="18dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Estado do produto: "
+            android:paddingLeft="6dp"
+            android:layout_margin="3dp"
+            android:background="@color/colorBlueAGA"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/editEstado"
+            android:textSize="18dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Preço do anúncio: "
+            android:paddingLeft="6dp"
+            android:layout_margin="3dp"
+            android:background="@color/colorBlueAGA"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/editPreco"
+            android:textSize="18dp"/>
+
+        <Button
+            android:id="@+id/btnCadastrarAnuncio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorEmerald"
+            android:text="Cadastrar Anúncio"
+            android:textColor="@color/colorWhite"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btnDeletarAnuncio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorPink"
+            android:text="Deletar Anúncio"
+            android:textColor="@color/colorWhite"
+            android:textSize="24sp"
+            android:inputType="numberDecimal"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</FrameLayout>
